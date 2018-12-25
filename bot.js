@@ -1,7 +1,7 @@
 //by revenge ! dont share this code in any discord server !
 const Discord = require('discord.js')
 const client = new Discord.Client()
-const prefix = 'r#'
+const prefix = 'g!'
 //information about the bot
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -34,7 +34,7 @@ client.on('ready', () => {
   console.log('╔[════════════]╗')
   console.log('Created By: Revenge')
   console.log('╚[════════════]╝')
-client.user.setActivity("r#help | By Revenge",{type: 'WATCHING'});
+client.user.setActivity("g!help-R | By Mahmoud",{type: 'WATCHING'});
 console.log('Done The Watching Setup Completed')
 	
 });
@@ -42,12 +42,12 @@ console.log('Done The Watching Setup Completed')
 client.on('message', message => {//new msg event
 if(!message.channel.guild) return;
   if(message.content.startsWith(prefix + 'set')) {//to create the rainbow role
-	  let role = message.guild.roles.find('name', 'Rainbow bot.')
+	  let role = message.guild.roles.find('name', 'Rainbow')
     if(role) return message.channel.send(`This Step Already Completed !`)//if the role already created return with this msg
   //start of create role 
   if(!role){
     rainbow =  message.guild.createRole({
-   name: "Rainbow bot.",//the role will create name
+   name: "Rainbow",//the role will create name
    color: "#000000",//the default color
    permissions:[]//the permissions
  //end of create role
@@ -69,7 +69,7 @@ client.on('ready', () => {//new ready event
 })
 
 client.on("message", message => {//new msg event
-  if (message.content === "r#help") {//the help cmd
+  if (message.content === "g!help") {//the help cmd
       message.react('🌈')
         let rainembed = new Discord.RichEmbed()//new embed
         //the embed description (help msg)
@@ -78,7 +78,7 @@ client.on("message", message => {//new msg event
 r#set 
  - لإنشاء رتبة الرينبو وبدا الرينبو
 - To create the role of the Rainbow & Start The Rainbow
-r#inv 
+g!inv 
 - لدعوة البوت
 - To Invite the bot
 خطوات لو الرتبة م أشتغلت .!!
@@ -88,13 +88,14 @@ The steps of the role did not worked .!!
 1- Place the role of the Rainbow above the colors or colored ranks if it
 2- Put the bot role above the role of the Rainbow 
 رآبط البوت - Bot Invite link
-- hhttp://cutt.us/HPkx6
+- https://discord.gg/w95WeM2
+
 =====================🌈 RainbowBot. 🌈=====================
 **`)
 message.author.sendEmbed(rainembed)//send the embed to the author dm
     }})
    client.on('message', message => {//new cmd
-	   if(message.content.startsWith(`r#inv`)) { //the invite bot cmd
+	   if(message.content.startsWith(`rrrrinv`)) { //the invite bot cmd
 		   if(!message.channel.guild) return;
                  message.react('🌈')
 		   var embed = new Discord.RichEmbed()
