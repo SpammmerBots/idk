@@ -32,7 +32,7 @@ client.on('ready', () => {
   console.log('╚[════════════]╝')
   console.log('')
   console.log('╔[════════════]╗')
-  console.log('Created By: Revenge')
+  console.log('Created By: ME')
   console.log('╚[════════════]╝')
 client.user.setActivity("g!help-R | By Mahmoud",{type: 'WATCHING'});
 console.log('Done The Watching Setup Completed')
