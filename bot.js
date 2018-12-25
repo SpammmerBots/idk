@@ -69,13 +69,13 @@ client.on('ready', () => {//new ready event
 })
 
 client.on("message", message => {//new msg event
-  if (message.content === "g!help") {//the help cmd
+  if (message.content === "g!help-R") {//the help cmd
       message.react('🌈')
         let rainembed = new Discord.RichEmbed()//new embed
         //the embed description (help msg)
         .setDescription(`**
 =====================🌈 RainbowBot. 🌈=====================
-r#set 
+g!set 
  - لإنشاء رتبة الرينبو وبدا الرينبو
 - To create the role of the Rainbow & Start The Rainbow
 g!inv 
